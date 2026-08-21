@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Milena | Tabela de Preços</title>
+
+
+    <style>
+
+        /* ===== FUNDO ===== */
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image: url("images/cliente4.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+
+        /* ===== TABELA DE PREÇOS ===== */
+
+        .tabela-precos {
+            width: 90%;
+            max-width: 800px;
+
+            margin: 50px auto;
+
+            padding: 30px;
+
+            background-color: rgba(255, 255, 255, 0.67);
+
+            border-radius: 20px;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+
+        /* ===== TÍTULO ===== */
+
+        .tabela-precos h2 {
+            text-align: center;
+
+            color: rgb(248, 94, 189);
+
+            font-size: 35px;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* ===== CADA ITEM ===== */
+
+        .item {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 20px;
+
+            border-bottom: 2px solid #fbacfb;
+        }
+
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+
+        /* ===== NOME DO SERVIÇO ===== */
+
+        .item h3 {
+            margin: 0;
+
+            color: #444;
+        }
+
+
+        /* ===== DESCRIÇÃO ===== */
+
+        .item p {
+            margin: 5px 0 0;
+
+            color: #777;
+        }
+
+
+        /* ===== PREÇO ===== */
+
+        .item span {
+            color: rgb(248, 94, 189);
+
+            font-size: 22px;
+
+            font-weight: bold;
+        }
+
+
+        /* ===== BOTÃO VOLTAR ===== */
+
+        .botao-voltar {
+            display: inline-block;
+
+            margin: 25px;
+
+            padding: 12px 20px;
+
+            background-color: #fbacfb;
+
+            color: white;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+            border-radius: 10px;
+
+            border: 2px solid rgb(248, 94, 189);
+
+            transition: 0.3s;
+        }
+
+
+        .botao-voltar:hover {
+            background-color: rgb(248, 94, 189);
+
+            color: white;
+        }
+
+
+        /* ===== CELULAR ===== */
+
+        @media (max-width: 600px) {
+
+            .tabela-precos {
+                width: 92%;
+
+                padding: 20px;
+
+                margin: 30px auto;
+            }
+
+
+            .tabela-precos h2 {
+                font-size: 28px;
+            }
+
+
+            .item {
+                padding: 15px;
+
+                gap: 10px;
+            }
+
+
+            .item h3 {
+                font-size: 17px;
+            }
+
+
+            .item p {
+                font-size: 13px;
+            }
+
+
+            .item span {
+                font-size: 18px;
+
+                white-space: nowrap;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <nav class="navbar navbar-static-top"
+         style="min-height: 80px; background-color: #fbacfb;">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header text-center w-100">
+
+                <h1 style="color: rgb(248, 94, 189);">
+
+                    Milena | Lash & Designer
+
+                </h1>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- BOTÃO VOLTAR -->
+
+    <a href="C:\Users\Meteoro\OneDrive\Documents\Trabalho_Da_milena\milena.html" class="botao-voltar">
+
+        ⬅️ Voltar para a página inicial
+
+    </a>
+
+
+    <!-- TABELA DE PREÇOS -->
+
+    <div class="tabela-precos">
+
+
+        <h2>
+
+            Tabela de Preços
+
+        </h2>
+
+
+        <!-- ALONGAMENTO -->
+
+        <div class="item">
+
+            <div>
+
+                <h3>
+                    Alongamento de Cílios
+                </h3>
+
+                <p>
+                    Aplicação completa de cílios
+                </p>
+
+            </div>
+
+            <span>
+                R$ 120,00
+            </span>
+
+        </div>
+
+
+        <!-- MANUTENÇÃO -->
+
+        <div class="item">
+
+            <div>
+
+                <h3>
+                    Manutenção de Cílios
+                </h3>
+
+                <p>
+                    Manutenção do alongamento
+                </p>
+
+            </div>
+
+            <span>
+                R$ 80,00
+            </span>
+
+        </div>
+
+
+        <!-- DESIGNER -->
+
+        <div class="item">
+
+            <div>
+
+                <h3>
+                    Designer de Sobrancelhas
+                </h3>
+
+                <p>
+                    Modelagem e acabamento
+                </p>
+
+            </div>
+
+            <span>
+                R$ 40,00
+            </span>
+
+        </div>
+
+
+        <!-- HENNA -->
+
+        <div class="item">
+
+            <div>
+
+                <h3>
+                    Designer + Henna
+                </h3>
+
+                <p>
+                    Design com aplicação de henna
+                </p>
+
+            </div>
+
+            <span>
+                R$ 55,00
+            </span>
+
+        </div>
+
+
+        <!-- LIMPEZA -->
+
+        <div class="item">
+
+            <div>
+
+                <h3>
+                    Limpeza de Sobrancelhas
+                </h3>
+
+                <p>
+                    Limpeza e acabamento
+                </p>
+
+            </div>
+
+            <span>
+                R$ 30,00
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

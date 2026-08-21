@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milena</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-static-top" 
+     style="min-height: 80px; background-color: #fbacfb;">
+    <div class="container-fluid">
+        <div class="navbar-header text-center w-100">
+            <h1 style="color: rgb(248, 94, 189);">
+                Milena | Lash & Designer
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<form method="post" class="form-horizontal">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Cadastro de Clientes</h1>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="nome" class="col-sm-2 control-label">Nome Completo</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome" autofocus required>
+                    </div>
+                </div> 
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">E-mail</label>
+                        <div class="col-sm-2">
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <label for="telefone" class="col-sm-2 control-label">Telefone</label>
+                        <div class="col-sm-2">
+                            <input type="tel" class="form-control" id="telefone" placeholder="(00) 0000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco" class="col-sm-2 control-label">Endereço</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="endereco" placeholder="Digite seu Endereço" required>
+                        </div>
+                        <label for="CEP" class="col-sm-2 control-label">CEP</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="CEP" maxlength="9"  pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+                        </div>
+                        </div>
+                    <div class="form-group">
+                        <label for="cidade" class="col-sm-2 control-label">Cidade</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="cidade" placeholder="Digite sua Cidade" required>
+                        </div>
+                        <div class="form-group">
+                                <label for="status" class="col-sm-2 control-label">Estado</label>
+                                <div class="col-sm-2">
+                                <select class="form-control" required>
+                                <option value="">Selecione</option>
+                                <option>AC-Acre</option>
+                                <option>AL-Alagoas</option>
+                                <option>AP-Amapá</option>
+                                <option>AM-Amazonas</option>
+                                <option>BA-Bahia</option>
+                                <option>CE-Ceará</option>
+                                <option>DF-Destrito Federal</option>
+                                <option>ES-Espírito Santo</option>
+                                <option>GO-Goiás</option>
+                                <option>MT-Mato Grosso</option>
+                                <option>MS-Mato Grosso Do Sul</option>
+                                <option>MG-Minas Gerais</option>
+                                <option>PA-Pará</option>
+                                <option>PB-Paraíba</option>
+                                <option>PR-Paraná</option>
+                                <option>PE-Pernambuco</option>
+                                <option>PI-Piauí</option>
+                                <option>RJ-Rio De Janeiro</option>
+                                <option>RN-Rio Grande Do Norte</option>
+                                <option>RS-Rio Grande Do Sul</option>
+                                <option>RO-Rondônia</option>
+                                <option>RR-Roraima</option>
+                                <option>SC-Santa Catarina</option>
+                                <option>SP-São Paulo</option>
+                                <option>SE-Sergipe</option>
+                                <option>TO-Tocantins</option>
+                                <option>Nenhum/Outro</option>
+                              </select>
+                              </div>
+                              </div>
+                    </div>
+                    <label for="Datanasc" class="col-sm-2 control-label">Data De Nascimento</label>
+                        <div class="col-sm-2">
+                            <input type="date" class="form-control" id="Datanasc" required>
+                        </div>
+                    
+                    <label for="idade" class="col-sm-2 control-label">Idade</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" id="idade" min="0" max="120" placeholder="Sua Idade" required>
+                        </div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-10">
+                        <input type="submit" value="Cadastrar Cliente" class="btn btn-primary">
+                          <button type="reset" class="btn btn-danger">Limpar</button>
+                        </div>   
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
