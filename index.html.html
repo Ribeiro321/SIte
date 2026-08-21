@@ -20,28 +20,26 @@
         }
 
         body {
-    margin: 0;
-    position: relative;
-}
+            margin: 0;
+            position: relative;
+        }
 
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image: url("C:\\Users\\Meteoro\\OneDrive\\Documents\\Trabalho_Da_milena\\images\\cliente2.jpeg");
-    background-size: cover;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
-    
-    /* SOMENTE A IMAGEM fica escura */
-    filter: brightness(50%);
-    
-    z-index: -1;
-}
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            /* CORRIGIDO: Caminho web relativo para a imagem de fundo */
+            background-image: url("images/cliente2.jpeg");
+            background-size: cover;
+            background-position: 50% 70%;
+            background-repeat: no-repeat;
+            
+            /* SOMENTE A IMAGEM fica escura */
+            filter: brightness(50%);
+            
+            z-index: -1;
+        }
         
-
-        
-
         /* Cabeçalho */
         .cabecalho {
             width: 100%;
@@ -153,11 +151,12 @@ body::before {
                 de Sobrancelhas
             </p>
 
-            <a href="C:\Users\Meteoro\OneDrive\Documents\Trabalho_Da_milena\milenaPreços.html" class="botao">
+            <!-- CORRIGIDO: Link relativo para a página de preços -->
+            <a href="milenaPreços.html" class="botao">
                 Ver Preços
             </a>
 
-            <a href="https://wa.me/5521994104555?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank"class="botao">
+            <a href="https://wa.me." target="_blank" class="botao">
                 Agendar Horário
             </a>
         </div>
@@ -165,7 +164,8 @@ body::before {
 
         <!-- FOTO -->
         <div>
-            <img src="C:\Users\Meteoro\OneDrive\Documents\Trabalho_Da_milena\images\milenaaaa.jpeg"
+            <!-- CORRIGIDO: Link relativo para a foto da Milena -->
+            <img src="images/milenaaaa.jpeg"
                  alt="Milena"
                  class="foto">
         </div>
